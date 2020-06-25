@@ -12,33 +12,35 @@
 
 </head>
 
-<body class = "full-height">
-  
-  <header class= "container-fluid">
+<body class="full-height">
+
+  <header class="container-fluid">
     <div class="row text-center">
       <div class="col-12">
         <h1>SLAP GAME</h1>
       </div>
     </div>
-   
-  </header>
-  
-  <div class="container-fluid">
-    <div class="row  justify-content-center">
-      <div class="col-6">
-        <img class = "w-200px" src= "slap.jpg"></div>
+
+  </header class="container-fluid">
+
+  <div class="row  justify-content-center">
+    <div class="col-6">
+      <img src="slap.jpg"></div>
+    <div class="col-6">
+      <span>Health:<span id="health">--</span></span>
+    </div>
+  </div>
+  </div>
+
+
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary" onclick="slap()">SLAP!</button>
       </div>
     </div>
-  </div>
-
-
-  <footer class = "container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <button class="btn btn-primary">SLAP!</button>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="game.js"></script>
 </body>
