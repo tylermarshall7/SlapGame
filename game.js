@@ -4,6 +4,15 @@ let targetName = "Barney Stinson"
 
 let hits = 0
 
+
+function healthcheck() {
+  if (health <= 50 && health >= 0) {
+    img2
+  } else if (health <= 0) {
+    img3
+  }
+
+}
 function slap() {
   health--
   hits++
@@ -25,6 +34,9 @@ function kick() {
 function update() {
   document.getElementById('health').innerText = `${health}`
   document.getElementById('hits').innerText = `${hits}`
+  
+
+  
   playagain()
 
 }
