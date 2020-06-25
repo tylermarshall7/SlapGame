@@ -6,13 +6,20 @@ let hits = 0
 
 
 function healthcheck() {
-  if (health <= 50 && health >= 0) {
-    img2
+  if (health < 50 && health > 0) {
+   let slap2 = document.getElementById('slap-img')
+   slap2.src = "/slap2.jpg"
+
   } else if (health <= 0) {
-    img3
+    let slap3 = document.getElementById('slap-img')
+    slap3.src = "/slap.gif"
+  } else {let slap = document.getElementById('slap-img')
+  slap.src = "/slap.jpg"
   }
 
 }
+
+
 function slap() {
   health--
   hits++
@@ -34,6 +41,7 @@ function kick() {
 function update() {
   document.getElementById('health').innerText = `${health}`
   document.getElementById('hits').innerText = `${hits}`
+  healthcheck()
   
 
   
